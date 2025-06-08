@@ -10,7 +10,7 @@ compiledate: string, containing 8 digits, representing a date in format YYYYMMDD
 dboxlcd: bool, True if "textlcd" is defined in MACHINE_FEATURES, False otherwise
 developername: string, distro name in lower case, from DEVELOPER_NAME ?= "${DISTRO_NAME}" in enigma-info.bb, defaults to "areadeltasat" in areadeltasat-common.conf
 displaybrand: string, manufacturer for display purposes, set via the MACHINE_BRAND variable in the "machine" .conf file in the BSP, in the case used by the manufacturer
-displaydistro: string, set hardcoded to "OpenPLi" in enigma-info.bb
+displaydistro: string, set hardcoded to "areadeltasat" in enigma-info.bb
 displaymodel: string, box model name for display purposes, set via the MACHINE_NAME variable in the "machine" .conf file in the BSP, in the case used by the manufacturer
 displaytype: string, type of front panel display, from the defined display type in MACHINE_FEATURES, empty string if the box has no front panel display
 distro: string, distro name in lower case, from DISTRO_NAME, defaults to "areadeltasat" in areadeltasat-common.conf

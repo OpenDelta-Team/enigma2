@@ -8,15 +8,15 @@ brand: string, manufacturer, set via the BRAND_OEM variable in the "machine" .co
 ci: bool, True if "ci" is defined in MACHINE_FEATURES, False otherwise
 compiledate: string, containing 8 digits, representing a date in format YYYYMMDD
 dboxlcd: bool, True if "textlcd" is defined in MACHINE_FEATURES, False otherwise
-developername: string, distro name in lower case, from DEVELOPER_NAME ?= "${DISTRO_NAME}" in enigma-info.bb, defaults to "openpli" in openpli-common.conf
+developername: string, distro name in lower case, from DEVELOPER_NAME ?= "${DISTRO_NAME}" in enigma-info.bb, defaults to "areadeltasat" in areadeltasat-common.conf
 displaybrand: string, manufacturer for display purposes, set via the MACHINE_BRAND variable in the "machine" .conf file in the BSP, in the case used by the manufacturer
 displaydistro: string, set hardcoded to "OpenPLi" in enigma-info.bb
 displaymodel: string, box model name for display purposes, set via the MACHINE_NAME variable in the "machine" .conf file in the BSP, in the case used by the manufacturer
 displaytype: string, type of front panel display, from the defined display type in MACHINE_FEATURES, empty string if the box has no front panel display
-distro: string, distro name in lower case, from DISTRO_NAME, defaults to "openpli" in openpli-common.conf
+distro: string, distro name in lower case, from DISTRO_NAME, defaults to "areadeltasat" in areadeltasat-common.conf
 driversdate: string, containing 8 digits, representing a date in format YYYYMMDD or "N/A"
 dvi: bool, True if "DVI" is defined in MACHINE_FEATURES, False otherwise
-feedsurl: string, from $DISTRO_FEED_URI, set in openpli-common.conf if not set already
+feedsurl: string, from $DISTRO_FEED_URI, set in areadeltasat-common.conf if not set already
 fhdskin: bool, True if "skin1080" is defined in MACHINE_FEATURES, False otherwise
 fpu: string, set in openembedded-core/meta/conf/machine/include/arm/arch-arm
 friendlyfamily: string, defaults to "${MACHINE}"
@@ -25,11 +25,11 @@ hdmifhdin: bool, True if "HDMI-IN-FHD" is defined in MACHINE_FEATURES, False oth
 hdmihdin: bool, True if "HDMI-IN-HD" is defined in MACHINE_FEATURES, False otherwise
 hdmistandbymode: int, 1 if "HDMISTANDBY" is defined in MACHINE_FEATURES, 0 otherwise
 imagebuild: string, blank for release images, otherwise it contains the short commit hash of the OE branch the image is built from
-imagedevbuild: string, not used in openpli, set to an empty string
+imagedevbuild: string, not used in areadeltasat, set to an empty string
 imagedir: string, set in the "machine" .conf file in the BSP as IMAGEDIR, e.g. 'uclan/ustym4kpro'
 imagefs: string, set in the "machine" .conf file in the BSP as IMAGE_FSTYPES, e.g. 'tar.bz2'. Multiple types are space-separated.
 imagetype: string, for release images, the word "release", for other images, the word "rev"
-imageversion: string, derived from DISTRO_VERSION (anything before the first dash found), which is set to "homebuild" in openpli-common.conf
+imageversion: string, derived from DISTRO_VERSION (anything before the first dash found), which is set to "13.3-r34" in areadeltasat-common.conf
 imglanguage: string, hardcoded to "multilang"
 imgrevision: string, default is the same as 'imagebuild'
 imgversion=: string, default is the same as 'imageversion'
@@ -37,7 +37,7 @@ kernel: string, from $KERNEL_VERSION, determined by the machine config in the BS
 kexecmb: bool, True if "kexecmb" is defined in MACHINE_FEATURES, False otherwise
 kernelfile: string, from $KERNEL_FILE, set in the machine config in the BSP
 machinebuild: string, from $MACHINE, may be modified to be OE-A compatible in enigma-info.bb
-mediaservice: string, from PREFERRED_PROVIDER_virtual/enigma2-mediaservice in the machine config in the BSP, defaults to "servicemp3" in openpli-common.conf
+mediaservice: string, from PREFERRED_PROVIDER_virtual/enigma2-mediaservice in the machine config in the BSP, defaults to "servicemp3" in areadeltasat-common.conf
 middleflash: bool, True if "middleflash" is defined in MACHINE_FEATURES, False otherwise
 mkubifs: string, from $MKUBIFS_ARGS, set in the machine config in the BSP
 model: string, from $MACHINE
@@ -50,8 +50,8 @@ oe: string, Yocto name and version, determined from the OE branch being used to 
 platform: string, from $STB_PLATFORM, defaults to "${MACHINE}", set in the machine config in the BSP
 python: string, from $PYTHON_BASEVERSION, e.g. '3.12'
 rca: bool, True if "RCA" is defined in MACHINE_FEATURES, False otherwise
-rcidnum: int, from $RCIDNUM, not used in OpenPLi, defaults to 2
-rcname: string, from $RCNAME, not used in OpenPLi, defaults to "dmm1"
+rcidnum: int, from $RCIDNUM, not used in areadeltasat, defaults to 2
+rcname: string, from $RCNAME, not used in areadeltasat, defaults to "dmm1"
 rctype: int, from $RCTYPE, set in the machine config in the BSP, defaults to 0
 rootfile: string, from $ROOTFS_FILE, set in the machine config in the BSP
 scart: bool, True if "SCART" is defined in MACHINE_FEATURES, False otherwise
